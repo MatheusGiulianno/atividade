@@ -1,0 +1,30 @@
+body{
+    font-family: Arial,sans-serif;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-gallery-container{
+    display:flex ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.grid-gallery-item{
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.grid-gacontainerllery- img{
+    width: 100%;
+    height: auto;
+}
+.grid-gallery-item img{
+    width: 250px;
+    height: 150px;
+    border-radius: 30px;
+}
