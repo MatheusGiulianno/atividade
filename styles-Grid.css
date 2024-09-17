@@ -7,34 +7,72 @@ body {
 
 /* Container da galeria usando Flexbox */
 .grid-gallery-container {
-    display: flex; /* Ativa o Flexbox */
-    justify-content: space-around; /* Distribui os itens com espaço ao redor */
-    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: space-around;
+    /* Distribui os itens com espaço ao redor */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem linha se não couberem */
     padding: 20px;
     width: 80%;
-    margin: auto; /*coloca o container para o meio automaticamente*/
+    margin: auto;
+    /*coloca o container para o meio automaticamente*/
 }
-.grid-gallery-container:hover .gallery-item{
+
+.grid-gallery-container:hover .gallery-item {
     opacity: .5;
 }
+
 .grid-gallery-container .gallery-item:hover {
     opacity: 1
 }
+
 /* Cada item da galeria */
 .grid-gallery-item {
     margin: 10px;
     border: 2px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    width: 400px; /* Define uma largura fixa para cada item */
+    width: 400px;
+    /* Define uma largura fixa para cada item */
     transition: all .3s;
 }
-.grid-gallery-item:hover{
+
+.grid-gallery-item:hover {
     transform: translateY(-20px)
 }
 
 /* Estilos para as imagens */
 .grid-gallery-item img {
-    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.btn-login{
+    border-radius: 20px;
+    width: 85px;
+    height: 85px;
+    font-size:18px;
+}
+.btn-sobre{
+    border-radius: 20px;
+    width: 85px;
+    height: 85px;
+    font-size:18px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container-login label{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    display: flex;
+}
+.container-login{
+    padding: 100px;
 }
